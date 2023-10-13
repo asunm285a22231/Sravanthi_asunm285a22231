@@ -1,16 +1,22 @@
-def recur_factorial(n):
-  if n == 1:
-    return n
-  else:
-    return n * recur_factorial(n - 1)
+Implement a function called sort_students that takes a list of student objects as input and sorts the list based on their CGPA (Cumulative Grade Point Average) in descending order. Each student object has the following attributes: name (string), roll_number (string), and cgpa (float). Test the function with different input lists of students.
+class Student:
+ def _init_(self, name,roll_number. cgpa):
+  self.name=name 
+  self.roll_number = roll_number      self.cgpa=cgpa 
 
+def sort_students(student_list):      sorted_students =
+sorted(student_list,key=lambda student: student.cgpa,reverse=True)  return sorted_students
 
-# take input from the user
-num = int(input("Enter a number: "))
-# check is the number is negative
-if num < 0:
-  print("Sorry, factorial does not exist for negative numbers")
-elif num == 0:
-  print("The factorial of 0 is 1")
-else:
-  print("The factorial of", num, "is", recur_factorial(num))
+students = [
+Student("Hari", "A123", 7. 8).
+Student("Srikanth". "A124", 8. 9). Student ("Saumya","A125",9.1,student
+("Mahidhar", "A126", 9. 9). ]
+
+sorted_students = sort_students
+(students)
+
+for student in sorted_students:      print("Name: {}, Roll Number: {},
+CGPA: {}".format(student. name, student. roll_num
+
+ber,student.cgpa))
+
